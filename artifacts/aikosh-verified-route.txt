@@ -1,0 +1,139 @@
+Datasets
+Models
+Model Tryout
+Notebook
+Other 
+Use Cases
+Toolkits
+Competitions
+Leaderboard
+Articles
+Organizations
+Community
+Tutorials
+User Manual
+University Engagement
+Login
+Register
+Home
+/
+Datasets
+/
+SILKWORM DATASETS OF SERICULTURE DEPARTMENT GOVERNMENT OF ANDHRA PRADESH
+Arjun Rao Palukuri
+DEPARTMENT OF SERICULTURE GOVERNMENT OF ANDHRA PRA...
+ORGANISATION
+Download Dataset
+SILKWORM DATASETS OF SERICULTURE DEPARTMENT GOVERNMENT OF ANDHRA PRADESH
+
+This dataset includes silkworm images/videos, environmental parameters, and cocoon production data to support AI-based health risk assessment and yield optimization in sericulture.
+
+About Dataset
+
+The Silkworm Health Dataset is developed by the Department of Sericulture to enable early detection of health risks and improve rearing efficiency through AI-driven insights. Silkworm health is a critical determinant of cocoon yield, and it is influenced by multiple factors including environmental conditions, feeding practices, and disease incidence. This dataset consists of smartphone-captured images and short videos of silkworm trays along with environmental parameters such as temperature, humidity, ventilation conditions, and hygiene indicators. It also includes cocoon production metrics such as cocoon weight, shell ratio, ERR%, and mortality data. The dataset supports development of intelligent systems for: • Health risk classification (Low / Medium / High) • Early warning systems for disease and stress detection • Prediction of cocoon yield outcomes • Advisory generation for corrective actions It is designed for practical deployment in rural field conditions with offline-first capability and minimal infrastructure requirements.
+
+Purpose of Dataset
+
+• To Assess Silkworm Health Using Image-based Ai Models • To Detect Early-stage Risks And Prevent Disease Outbreaks • To Reduce Larval Mortality And Improve Survival Rates • To Optimize Environmental Conditions During Rearing • To Support Field Officers With Real-time Decision Tools • To Enhance Overall Silk Production Efficiency
+
+DATASET METADATA
+Download Metadata
+License
+
+NA
+
+Geographical coverage
+
+INDIA
+
+Sector
+
+AgriKosh
+
+Author
+
+DEPARTMENT OF SERICULTURE GOVERNMENT OF ANDHRA PRADESH
+
+Source Organisation
+
+DEPARTMENT OF SERICULTURE GOVERNMENT OF ANDHRA PRADESH
+
+Uploaded by
+
+Arjun Rao Palukuri
+
+Data Quality Score (Beta)
+
+ 4.75
+
+Dataset type
+
+Unstructured
+
+Frequency
+
+Static
+
+Time Granularity
+
+Static
+
+Year range
+
+N.A.
+
+Date & Time
+
+08/04/26 13:38:54
+
+Visibility
+
+Open
+
+Hosted / Redirected
+
+Hosted
+
+Data Type
+
+Primary
+
+Activity Overview
+0
+78
+0
+824
+Tags
+ Sericulture 
+License Control
+
+NA
+
+Discover everything you can achieve with us today and beyond!
+Get Started
+
+Dataset Platform
+
+Last Deployed : 31st August, 26
+Visitors: 3,31,94,656
+AIKosh
+About us
+Articles
+Sitemap
+Resources
+Datasets
+Models
+Use Cases
+Toolkits
+Notebook
+Competitions
+Tutorials
+Support
+FAQs
+Grievances
+User Manual
+
+© 2026 - Copyright AIKosh. All rights reserved.
+
+Terms of Use
+Privacy Policy

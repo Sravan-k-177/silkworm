@@ -1,0 +1,1153 @@
+{
+  "task": "Silkworm image appearance classification; not diagnosis or future mortality prediction",
+  "version": "larval-appearance-v1",
+  "source": "https://data.mendeley.com/datasets/g4b89vpp9c/1",
+  "license": "CC BY 4.0",
+  "authors": [
+    "Kajal Mungase",
+    "Shwetambari Chiwhane"
+  ],
+  "classes": [
+    "Flacherie",
+    "Grasserie",
+    "Healthy",
+    "Overlap",
+    "Pebrine"
+  ],
+  "selected": "mobilenet_v3_C0.1",
+  "model_family": "mobilenet_v3",
+  "acquired_images": 5529,
+  "representative_images": 3843,
+  "partition_sizes": {
+    "train": 2305,
+    "selection": 384,
+    "calibration": 385,
+    "test": 769
+  },
+  "selection": "Highest macro-F1 among MobileNetV3 deep models on selection partition only; color/texture candidates retained as comparators; temperature fitted on separate calibration partition; held-out test evaluated once after selection.",
+  "temperature": 1.0630519478109481,
+  "test_accuracy_bootstrap_95_interval": [
+    0.9804941482444733,
+    0.9947984395318595
+  ],
+  "selective_test": {
+    "score_threshold": 0.7,
+    "coverage": 0.706111833550065,
+    "accepted": 543,
+    "accuracy": 0.988950276243094,
+    "interpretation": "Internal selective classification only; threshold is not a validated field-safety cutoff."
+  },
+  "results": {
+    "color_texture_C0.01": {
+      "fit_seconds": 0.1009466299997257,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.8619791666666666,
+        "balanced_accuracy": 0.8464941471800739,
+        "macro_f1": 0.8391886349060286,
+        "negative_log_likelihood": 0.3720804088779495,
+        "brier": 0.19178490896715164,
+        "ece_10_bins": 0.1080321122341597,
+        "reliability_bins": [
+          {
+            "count": 9,
+            "mean_score": 0.36033440044353526,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "count": 30,
+            "mean_score": 0.44899504878714,
+            "accuracy": 0.5333333333333333
+          },
+          {
+            "count": 33,
+            "mean_score": 0.5631366646595399,
+            "accuracy": 0.3939393939393939
+          },
+          {
+            "count": 48,
+            "mean_score": 0.6473515405261193,
+            "accuracy": 0.8333333333333334
+          },
+          {
+            "count": 43,
+            "mean_score": 0.752698063924032,
+            "accuracy": 0.9534883720930233
+          },
+          {
+            "count": 81,
+            "mean_score": 0.8592554181216359,
+            "accuracy": 0.9629629629629629
+          },
+          {
+            "count": 140,
+            "mean_score": 0.9488125529598964,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            80,
+            1,
+            1,
+            0,
+            10
+          ],
+          [
+            2,
+            48,
+            13,
+            1,
+            2
+          ],
+          [
+            0,
+            5,
+            31,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            105,
+            0
+          ],
+          [
+            11,
+            5,
+            0,
+            0,
+            67
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 0.8602150537634409,
+            "recall": 0.8695652173913043,
+            "f1-score": 0.8648648648648649,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.8,
+            "recall": 0.7272727272727273,
+            "f1-score": 0.7619047619047619,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.6888888888888889,
+            "recall": 0.8378378378378378,
+            "f1-score": 0.7560975609756098,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 0.9813084112149533,
+            "recall": 0.9905660377358491,
+            "f1-score": 0.9859154929577465,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.8481012658227848,
+            "recall": 0.8072289156626506,
+            "f1-score": 0.8271604938271605,
+            "support": 83.0
+          },
+          "accuracy": 0.8619791666666666,
+          "macro avg": {
+            "precision": 0.8357027239380136,
+            "recall": 0.8464941471800739,
+            "f1-score": 0.8391886349060286,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.8641660689770875,
+            "recall": 0.8619791666666666,
+            "f1-score": 0.8619537886733201,
+            "support": 384.0
+          }
+        }
+      }
+    },
+    "color_texture_C0.1": {
+      "fit_seconds": 0.09095474400010062,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.8984375,
+        "balanced_accuracy": 0.8768245704649236,
+        "macro_f1": 0.8753475419897422,
+        "negative_log_likelihood": 0.2721402469296705,
+        "brier": 0.14255356287402643,
+        "ece_10_bins": 0.03413721648278311,
+        "reliability_bins": [
+          {
+            "count": 4,
+            "mean_score": 0.36063403061139093,
+            "accuracy": 0.25
+          },
+          {
+            "count": 10,
+            "mean_score": 0.45560416474766824,
+            "accuracy": 0.5
+          },
+          {
+            "count": 24,
+            "mean_score": 0.5484434560464558,
+            "accuracy": 0.5
+          },
+          {
+            "count": 17,
+            "mean_score": 0.6578952311470373,
+            "accuracy": 0.5882352941176471
+          },
+          {
+            "count": 32,
+            "mean_score": 0.7488633465569654,
+            "accuracy": 0.84375
+          },
+          {
+            "count": 51,
+            "mean_score": 0.8622621741635584,
+            "accuracy": 0.9607843137254902
+          },
+          {
+            "count": 246,
+            "mean_score": 0.972299460357847,
+            "accuracy": 0.9796747967479674
+          }
+        ],
+        "confusion_matrix": [
+          [
+            87,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            5,
+            50,
+            9,
+            1,
+            1
+          ],
+          [
+            0,
+            7,
+            30,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            105,
+            0
+          ],
+          [
+            5,
+            5,
+            0,
+            0,
+            73
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 0.8969072164948454,
+            "recall": 0.9456521739130435,
+            "f1-score": 0.9206349206349206,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.78125,
+            "recall": 0.7575757575757576,
+            "f1-score": 0.7692307692307693,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.7692307692307693,
+            "recall": 0.8108108108108109,
+            "f1-score": 0.7894736842105263,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 0.9905660377358491,
+            "recall": 0.9905660377358491,
+            "f1-score": 0.9905660377358491,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9358974358974359,
+            "recall": 0.8795180722891566,
+            "f1-score": 0.906832298136646,
+            "support": 83.0
+          },
+          "accuracy": 0.8984375,
+          "macro avg": {
+            "precision": 0.8747702918717799,
+            "recall": 0.8768245704649236,
+            "f1-score": 0.8753475419897422,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.8990077853087276,
+            "recall": 0.8984375,
+            "f1-score": 0.8982949232520171,
+            "support": 384.0
+          }
+        }
+      }
+    },
+    "color_texture_C1.0": {
+      "fit_seconds": 0.17781816500018977,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.9088541666666666,
+        "balanced_accuracy": 0.8898438304983269,
+        "macro_f1": 0.888830082900147,
+        "negative_log_likelihood": 0.2854206029296101,
+        "brier": 0.13130088640260512,
+        "ece_10_bins": 0.015998246677250087,
+        "reliability_bins": [
+          {
+            "count": 8,
+            "mean_score": 0.46222849816492323,
+            "accuracy": 0.25
+          },
+          {
+            "count": 12,
+            "mean_score": 0.5631559455830228,
+            "accuracy": 0.5833333333333334
+          },
+          {
+            "count": 22,
+            "mean_score": 0.6516178568172375,
+            "accuracy": 0.6363636363636364
+          },
+          {
+            "count": 15,
+            "mean_score": 0.7391566646572411,
+            "accuracy": 0.7333333333333333
+          },
+          {
+            "count": 24,
+            "mean_score": 0.8586812670902478,
+            "accuracy": 0.7916666666666666
+          },
+          {
+            "count": 303,
+            "mean_score": 0.9840662602499576,
+            "accuracy": 0.976897689768977
+          }
+        ],
+        "confusion_matrix": [
+          [
+            88,
+            1,
+            0,
+            0,
+            3
+          ],
+          [
+            5,
+            51,
+            8,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            31,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            105,
+            0
+          ],
+          [
+            5,
+            3,
+            0,
+            1,
+            74
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 0.8979591836734694,
+            "recall": 0.9565217391304348,
+            "f1-score": 0.9263157894736842,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.8225806451612904,
+            "recall": 0.7727272727272727,
+            "f1-score": 0.796875,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.7948717948717948,
+            "recall": 0.8378378378378378,
+            "f1-score": 0.8157894736842105,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 0.9813084112149533,
+            "recall": 0.9905660377358491,
+            "f1-score": 0.9859154929577465,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9487179487179487,
+            "recall": 0.891566265060241,
+            "f1-score": 0.9192546583850931,
+            "support": 83.0
+          },
+          "accuracy": 0.9088541666666666,
+          "macro avg": {
+            "precision": 0.8890875967278914,
+            "recall": 0.8898438304983269,
+            "f1-score": 0.888830082900147,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.9090497531803008,
+            "recall": 0.9088541666666666,
+            "f1-score": 0.9083442501494234,
+            "support": 384.0
+          }
+        }
+      }
+    },
+    "mobilenet_v3_C0.01": {
+      "fit_seconds": 0.15508741099984036,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.984375,
+        "balanced_accuracy": 0.9755492646796995,
+        "macro_f1": 0.9778962433405919,
+        "negative_log_likelihood": 0.07538387924432755,
+        "brier": 0.030681340992340895,
+        "ece_10_bins": 0.02711590193212032,
+        "reliability_bins": [
+          {
+            "count": 1,
+            "mean_score": 0.4971921443939209,
+            "accuracy": 0.0
+          },
+          {
+            "count": 3,
+            "mean_score": 0.5702464580535889,
+            "accuracy": 1.0
+          },
+          {
+            "count": 3,
+            "mean_score": 0.6263911724090576,
+            "accuracy": 1.0
+          },
+          {
+            "count": 5,
+            "mean_score": 0.7311058044433594,
+            "accuracy": 0.8
+          },
+          {
+            "count": 36,
+            "mean_score": 0.8552520275115967,
+            "accuracy": 0.8888888888888888
+          },
+          {
+            "count": 336,
+            "mean_score": 0.9822921752929688,
+            "accuracy": 1.0
+          }
+        ],
+        "confusion_matrix": [
+          [
+            91,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            64,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            34,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            106,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            83
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 1.0,
+            "recall": 0.9891304347826086,
+            "f1-score": 0.994535519125683,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.9552238805970149,
+            "recall": 0.9696969696969697,
+            "f1-score": 0.9624060150375939,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.9714285714285714,
+            "recall": 0.918918918918919,
+            "f1-score": 0.9444444444444444,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9764705882352941,
+            "recall": 1.0,
+            "f1-score": 0.9880952380952381,
+            "support": 83.0
+          },
+          "accuracy": 0.984375,
+          "macro avg": {
+            "precision": 0.9806246080521761,
+            "recall": 0.9755492646796995,
+            "f1-score": 0.9778962433405919,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.9844653439734103,
+            "recall": 0.984375,
+            "f1-score": 0.9843031613499824,
+            "support": 384.0
+          }
+        }
+      }
+    },
+    "mobilenet_v3_C0.1": {
+      "fit_seconds": 0.0875496540002132,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.9869791666666666,
+        "balanced_accuracy": 0.9777231777231776,
+        "macro_f1": 0.9801724871059886,
+        "negative_log_likelihood": 0.05854956433176994,
+        "brier": 0.02725722924464749,
+        "ece_10_bins": 0.011603729644169386,
+        "reliability_bins": [
+          {
+            "count": 3,
+            "mean_score": 0.5443723797798157,
+            "accuracy": 1.0
+          },
+          {
+            "count": 2,
+            "mean_score": 0.6614664793014526,
+            "accuracy": 1.0
+          },
+          {
+            "count": 2,
+            "mean_score": 0.7541921138763428,
+            "accuracy": 1.0
+          },
+          {
+            "count": 9,
+            "mean_score": 0.8550523519515991,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "count": 368,
+            "mean_score": 0.9939543604850769,
+            "accuracy": 0.9945652173913043
+          }
+        ],
+        "confusion_matrix": [
+          [
+            92,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            64,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            34,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            106,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            83
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.9552238805970149,
+            "recall": 0.9696969696969697,
+            "f1-score": 0.9624060150375939,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.9714285714285714,
+            "recall": 0.918918918918919,
+            "f1-score": 0.9444444444444444,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9880952380952381,
+            "recall": 1.0,
+            "f1-score": 0.9940119760479041,
+            "support": 83.0
+          },
+          "accuracy": 0.9869791666666666,
+          "macro avg": {
+            "precision": 0.982949538024165,
+            "recall": 0.9777231777231776,
+            "f1-score": 0.9801724871059886,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.9869779636045961,
+            "recall": 0.9869791666666666,
+            "f1-score": 0.9868912381481816,
+            "support": 384.0
+          }
+        }
+      },
+      "calibration": {
+        "n": 385,
+        "accuracy": 0.9896103896103896,
+        "balanced_accuracy": 0.9854892205638475,
+        "macro_f1": 0.9845226110667828,
+        "negative_log_likelihood": 0.06398492306470871,
+        "brier": 0.02218034623905009,
+        "ece_10_bins": 0.011494848325655067,
+        "reliability_bins": [
+          {
+            "count": 1,
+            "mean_score": 0.4026526212692261,
+            "accuracy": 0.0
+          },
+          {
+            "count": 1,
+            "mean_score": 0.5295587182044983,
+            "accuracy": 1.0
+          },
+          {
+            "count": 7,
+            "mean_score": 0.7605391144752502,
+            "accuracy": 1.0
+          },
+          {
+            "count": 10,
+            "mean_score": 0.8488427996635437,
+            "accuracy": 1.0
+          },
+          {
+            "count": 366,
+            "mean_score": 0.9927995204925537,
+            "accuracy": 0.9918032786885246
+          }
+        ],
+        "confusion_matrix": [
+          [
+            93,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            64,
+            2,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            35,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            106,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            83
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 93.0
+          },
+          "Grasserie": {
+            "precision": 0.9846153846153847,
+            "recall": 0.9552238805970149,
+            "f1-score": 0.9696969696969697,
+            "support": 67.0
+          },
+          "Healthy": {
+            "precision": 0.9459459459459459,
+            "recall": 0.9722222222222222,
+            "f1-score": 0.958904109589041,
+            "support": 36.0
+          },
+          "Overlap": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9880952380952381,
+            "recall": 1.0,
+            "f1-score": 0.9940119760479041,
+            "support": 83.0
+          },
+          "accuracy": 0.9896103896103896,
+          "macro avg": {
+            "precision": 0.9837313137313138,
+            "recall": 0.9854892205638475,
+            "f1-score": 0.9845226110667828,
+            "support": 385.0
+          },
+          "weighted avg": {
+            "precision": 0.9897017911303626,
+            "recall": 0.9896103896103896,
+            "f1-score": 0.9895928283815026,
+            "support": 385.0
+          }
+        }
+      },
+      "test": {
+        "n": 769,
+        "accuracy": 0.988296488946684,
+        "balanced_accuracy": 0.9860755554194631,
+        "macro_f1": 0.9834683364137818,
+        "negative_log_likelihood": 0.039277639240026474,
+        "brier": 0.019823103239408245,
+        "ece_10_bins": 0.011598322884469141,
+        "reliability_bins": [
+          {
+            "count": 3,
+            "mean_score": 0.4667001962661743,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "count": 1,
+            "mean_score": 0.5706483721733093,
+            "accuracy": 0.0
+          },
+          {
+            "count": 10,
+            "mean_score": 0.6633173227310181,
+            "accuracy": 0.9
+          },
+          {
+            "count": 8,
+            "mean_score": 0.7353054285049438,
+            "accuracy": 0.75
+          },
+          {
+            "count": 18,
+            "mean_score": 0.8636358976364136,
+            "accuracy": 0.8333333333333334
+          },
+          {
+            "count": 729,
+            "mean_score": 0.9921553730964661,
+            "accuracy": 0.9986282578875172
+          }
+        ],
+        "confusion_matrix": [
+          [
+            183,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            127,
+            5,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            72,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            212,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            166
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 1.0,
+            "recall": 0.9891891891891892,
+            "f1-score": 0.9945652173913043,
+            "support": 185.0
+          },
+          "Grasserie": {
+            "precision": 0.9769230769230769,
+            "recall": 0.9548872180451128,
+            "f1-score": 0.9657794676806084,
+            "support": 133.0
+          },
+          "Healthy": {
+            "precision": 0.935064935064935,
+            "recall": 0.9863013698630136,
+            "f1-score": 0.96,
+            "support": 73.0
+          },
+          "Overlap": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 212.0
+          },
+          "Pebrine": {
+            "precision": 0.9940119760479041,
+            "recall": 1.0,
+            "f1-score": 0.996996996996997,
+            "support": 166.0
+          },
+          "accuracy": 0.988296488946684,
+          "macro avg": {
+            "precision": 0.9811999976071831,
+            "recall": 0.9860755554194631,
+            "f1-score": 0.9834683364137818,
+            "support": 769.0
+          },
+          "weighted avg": {
+            "precision": 0.9885520123725119,
+            "recall": 0.988296488946684,
+            "f1-score": 0.9883286552931256,
+            "support": 769.0
+          }
+        }
+      }
+    },
+    "mobilenet_v3_C1.0": {
+      "fit_seconds": 0.03580913500036331,
+      "selection": {
+        "n": 384,
+        "accuracy": 0.984375,
+        "balanced_accuracy": 0.9746928746928747,
+        "macro_f1": 0.9774170274170274,
+        "negative_log_likelihood": 0.06292083114385605,
+        "brier": 0.026458885515399978,
+        "ece_10_bins": 0.009883396637936437,
+        "reliability_bins": [
+          {
+            "count": 3,
+            "mean_score": 0.555088460445404,
+            "accuracy": 0.6666666666666666
+          },
+          {
+            "count": 1,
+            "mean_score": 0.6555708050727844,
+            "accuracy": 1.0
+          },
+          {
+            "count": 2,
+            "mean_score": 0.7581067681312561,
+            "accuracy": 0.5
+          },
+          {
+            "count": 5,
+            "mean_score": 0.8583002090454102,
+            "accuracy": 0.8
+          },
+          {
+            "count": 373,
+            "mean_score": 0.9981456995010376,
+            "accuracy": 0.9919571045576407
+          }
+        ],
+        "confusion_matrix": [
+          [
+            92,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            63,
+            1,
+            0,
+            2
+          ],
+          [
+            0,
+            3,
+            34,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            106,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            83
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 92.0
+          },
+          "Grasserie": {
+            "precision": 0.9545454545454546,
+            "recall": 0.9545454545454546,
+            "f1-score": 0.9545454545454546,
+            "support": 66.0
+          },
+          "Healthy": {
+            "precision": 0.9714285714285714,
+            "recall": 0.918918918918919,
+            "f1-score": 0.9444444444444444,
+            "support": 37.0
+          },
+          "Overlap": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 106.0
+          },
+          "Pebrine": {
+            "precision": 0.9764705882352941,
+            "recall": 1.0,
+            "f1-score": 0.9880952380952381,
+            "support": 83.0
+          },
+          "accuracy": 0.984375,
+          "macro avg": {
+            "precision": 0.980488922841864,
+            "recall": 0.9746928746928747,
+            "f1-score": 0.9774170274170274,
+            "support": 384.0
+          },
+          "weighted avg": {
+            "precision": 0.9843487394957985,
+            "recall": 0.984375,
+            "f1-score": 0.984261326058201,
+            "support": 384.0
+          }
+        }
+      }
+    },
+    "majority": {
+      "test": {
+        "n": 769,
+        "accuracy": 0.2756827048114434,
+        "balanced_accuracy": 0.2,
+        "macro_f1": 0.08644240570846076,
+        "negative_log_likelihood": 26.107041531519176,
+        "brier": 1.4486345903771132,
+        "ece_10_bins": 0.7243172951885566,
+        "reliability_bins": [
+          {
+            "count": 769,
+            "mean_score": 1.0,
+            "accuracy": 0.2756827048114434
+          }
+        ],
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            185,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            133,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            73,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            212,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            166,
+            0
+          ]
+        ],
+        "per_class": {
+          "Flacherie": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 185.0
+          },
+          "Grasserie": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 133.0
+          },
+          "Healthy": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 73.0
+          },
+          "Overlap": {
+            "precision": 0.2756827048114434,
+            "recall": 1.0,
+            "f1-score": 0.4322120285423038,
+            "support": 212.0
+          },
+          "Pebrine": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 166.0
+          },
+          "accuracy": 0.2756827048114434,
+          "macro avg": {
+            "precision": 0.055136540962288684,
+            "recall": 0.2,
+            "f1-score": 0.08644240570846076,
+            "support": 769.0
+          },
+          "weighted avg": {
+            "precision": 0.07600095373215345,
+            "recall": 0.2756827048114434,
+            "f1-score": 0.1191533810805831,
+            "support": 769.0
+          }
+        }
+      }
+    }
+  },
+  "preprocessing": "EXIF transpose; RGB; 224x224 nearest-centre full-image sampling; RGB /255 then ImageNet mean/std for MobileNet. Deliberately no crop to retain tray context.",
+  "backbone": "torchvision MobileNet_V3_Small_Weights.IMAGENET1K_V1; frozen, new supervised multinomial logistic head",
+  "limitations": [
+    "Dataset folder labels are not independently confirmed diagnoses.",
+    "No linked onset, environmental or mortality data: no early-warning lead time or yield benefit established.",
+    "One source, heuristic duplicate groups; hidden shared specimens/capture sessions and background confounding remain possible.",
+    "Overlap is not a disease; its output is withheld from health interpretation.",
+    "Temperature calibration is internal to this source; not validated field confidence.",
+    "Unsupported objects may still receive high scores. No universal out-of-distribution detector.",
+    "Random image-group holdout is not an independent farm or regional validation."
+  ],
+  "onnx_bytes": 3732850,
+  "onnx_sha256": "1643d76dacee64b276507921b70a8f395ec64929a705662e630702367c91d855",
+  "python_onnx_max_logit_error": 1.2993812561035156e-05
+}

@@ -1,0 +1,17 @@
+[Unit]
+Description=SilkSense frontend and backend demonstration
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/sravan/Desktop/tuffLikeSilk
+Environment=NODE_ENV=production
+Environment=HOST=127.0.0.1
+Environment=PORT=8787
+Environment=DATA_DIR=/home/sravan/Desktop/tuffLikeSilk/.data/deployed
+ExecStart=/home/sravan/.nvm/versions/node/v22.23.1/bin/node --experimental-strip-types server/index.ts
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

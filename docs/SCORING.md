@@ -1,0 +1,19 @@
+# Local scoring and mulberry leaf evidence
+
+16 September 2026 — `priority-rules-0.4`
+
+The displayed 0–100 value is a review-priority checklist, not disease probability, leaf disease severity, expected loss or a trained joint prediction. This release fixes overly coarse environmental points and connects mulberry photos to batch assessments. It does not retrain either image model or establish field accuracy.
+
+Temperature and humidity retain the existing instar-specific regional reference ranges. Outside a range, points now increase with distance to the nearest boundary: `ceil(20 × deviation / scale)`, capped at 20 per measurement. The scales are 5 °C and 15 relative-humidity percentage points. For instar V, 24.1 °C adds 1 point, 25 °C adds 4, and 29 °C adds 20. These scales and all thresholds below are explicit engineering policy, not experimentally calibrated biological thresholds. Missing measurements add no invented points; the result highlights incomplete checks.
+
+Suspect feed reported by the user or an eligible leaf-image warning contributes one feed factor of 20 points, putting feed-only concern into medium review priority. Both together still contribute 20. A reported-fresh answer cannot erase a leaf warning. A healthy-looking photo cannot erase poor feed, environmental concerns or mortality. Larval appearance and reported discoloration retain both explanations but contribute at most 25 appearance points together. Unusual mortality continues to add 60 and always reaches high priority. Total points cap at 100; all contributing explanations remain visible. Medium starts at 20, high at 50.
+
+The installed mulberry model is unchanged: logistic regression on 153 color/texture features, trained using the acquired 1,091-image source collection. It supports Healthy, Leaf rust and Leaf spot. Its internal test accuracy is 93.58%; field performance is not established. Its class scores are uncalibrated and cannot identify arbitrary plants, measure pesticide residues, contamination, moisture or nutritional suitability.
+
+Leaf-image points require the supported model version, the user's confirmation that the photographed leaf is mulberry feed for the batch, no image-quality warnings, a top score of at least 0.8, and a margin of at least 0.2 over the next class. This is an engineering abstention rule, not calibrated confidence. Unsupported plants can still fool the classifier even after these checks. Dark, overexposed, low-detail, undersized, ambiguous or unconfirmed images remain uncertain and request confirmation/retaking; their scores do not add image-based feed points.
+
+A separate leaf photo can be added in the assessment form, or passed from the standalone leaf screen using “Use this leaf result in a batch assessment.” Photo confirmation, class scores, model version, quality warnings and capture time persist with the assessment through offline storage, synchronization and export/import. The leaf photo is kept in device media storage separately from the tray image, resized to at most 1280 pixels with metadata stripped. Structured export and synchronization do not include image bytes. The same scoring logic runs in the browser and `/api/explain`. Simulating fresh feed preserves the recorded leaf warning; reassess replacement feed with a new photo.
+
+Old records retain their original scores and rule versions. Care previews identify when they use a newer rule version. Create a new assessment to record a new score.
+
+Biological context: [CSRTI Mysuru disease guidance](https://csrtimys.res.in/diseases-pests) identifies contaminated mulberry leaves as an infection route and poor leaf quality among predisposing factors; it does not supply our numeric weights. Regional environmental references remain [CSR&TI Berhampore's technology descriptor](https://csrtiber.res.in/Technologies_descriptor.pdf). Local breed, stage and regional suitability require field expertise.

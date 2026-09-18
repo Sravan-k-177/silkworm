@@ -1,0 +1,15 @@
+{
+  "id": "fe1caad470d49b36f7e6",
+  "source_path": "Mulberry Data/Leaf Rust/IMG_1228.JPG",
+  "label": "Leaf rust",
+  "source_sha256": "7154a69d3f12cdcfa14acd90780f5120bdb298c028274d9935d0ffba3befa21e",
+  "source_bytes": 10141906,
+  "source_width": 4000,
+  "source_height": 6000,
+  "derived_sha256": "d7220674b53458e632e370543e9282912a25bb1fa10d390d37023d0dfc4ee3db",
+  "path": "data/mulberry/fe1caad470d49b36f7e6.png",
+  "transform": "EXIF transpose; RGB; stretch 224x224 Lanczos PNG; original bytes not retained due disk budget",
+  "group": 440,
+  "split": "test",
+  "dhash": "c87c7d3c5613d378"
+}

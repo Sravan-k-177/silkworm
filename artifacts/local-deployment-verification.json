@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-09-16T15:15:04.859Z",
+  "demo": "http://127.0.0.1:8787/",
+  "accounts": "http://127.0.0.1:8790/",
+  "login": true,
+  "telugu": true,
+  "mobileOverflow": false,
+  "authenticatedModelHealth": true,
+  "authenticatedInference": true,
+  "authenticatedLeafInference": true,
+  "logoutDeniesSync": true,
+  "browserErrors": [],
+  "publicDeployment": false
+}

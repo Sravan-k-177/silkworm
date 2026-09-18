@@ -1,0 +1,15 @@
+{
+  "source": "https://data.mendeley.com/datasets/g4b89vpp9c/1",
+  "doi": "10.17632/g4b89vpp9c.1",
+  "authors": [
+    "Kajal Mungase",
+    "Shwetambari Chiwhane"
+  ],
+  "license": "CC BY 4.0",
+  "public_archive_url": "https://prod-dcd-datasets-public-files-eu-west-1.s3.eu-west-1.amazonaws.com/c78383b0-3f8e-49a1-b28a-5a82fe05c476",
+  "bytes": 247151747,
+  "etag": "\"82611fc9e827a0562d51635ca76babb0-12\"",
+  "sha256": "508630aec63bedb141bcc3e985e28acfd250ad890a023136f6a7b3a0fa84cb01",
+  "downloadedAt": "2026-09-09T20:14:24Z",
+  "status": "complete"
+}

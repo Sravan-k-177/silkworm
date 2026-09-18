@@ -1,0 +1,8 @@
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
+onnx==1.17.0
+onnxruntime==1.28.0
+numpy==1.26.4
+Pillow==10.2.0
+scikit-learn==1.9.0
+scipy==1.11.4

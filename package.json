@@ -1,0 +1,48 @@
+{
+  "name": "silksense",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:server\" \"vite --host 127.0.0.1\"",
+    "server": "node --experimental-strip-types server/index.ts",
+    "build": "tsc -b && vite build",
+    "start": "NODE_ENV=production node --experimental-strip-types server/index.ts",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "prebuild": "node scripts/prepare-runtime.mjs",
+    "test:auth": "playwright test --config playwright.auth.config.ts",
+    "user": "node --experimental-strip-types scripts/manage-user.ts",
+    "check:local": "node scripts/check-local.mjs"
+  },
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "dexie-react-hooks": "^4.2.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.7.0",
+    "express-session": "^1.19.0",
+    "i18next": "^26.4.2",
+    "lucide-react": "^0.468.0",
+    "onnxruntime-web": "^1.22.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^17.0.14",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.58.0",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@vitejs/plugin-react": "^4.4.0",
+    "concurrently": "^9.1.2",
+    "fake-indexeddb": "^6.0.0",
+    "prettier": "^3.9.6",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.0",
+    "vitest": "^3.2.0"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "checkedAt": "2026-09-16T03:23:45.511Z",
+  "status": "passed",
+  "fixture": "synthetic regression database",
+  "onlineWALSnapshot": true,
+  "restoredIntegrity": "ok",
+  "restoredRows": 1,
+  "laterWritesExcluded": true
+}

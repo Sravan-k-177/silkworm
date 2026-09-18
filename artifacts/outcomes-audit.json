@@ -1,0 +1,64 @@
+{
+  "source": "https://doi.org/10.6084/m9.figshare.29214152",
+  "author": "Soniya Thapa",
+  "posted": "2025-06-02",
+  "license": "CC BY 4.0",
+  "files": [
+    {
+      "file": "analysis.csv",
+      "bytes": 1368,
+      "md5_matches_publisher": true,
+      "sha256": "6a1315c73031a9f869c75a3e4556df0b41030b6cb96fcb483032af321222c26b"
+    },
+    {
+      "file": "LEAF CONSUMPTION.xlsx",
+      "bytes": 9851,
+      "md5_matches_publisher": true,
+      "sha256": "5d0b5b83e009b742d3b583fed54d51266efc3bc8c4908e81bed2018acf1d699e"
+    },
+    {
+      "file": "TEMPERATUIRE AND RELATIVE HUMIDITY.xlsx",
+      "bytes": 9887,
+      "md5_matches_publisher": true,
+      "sha256": "9956be2f9a403a11da623080eebb2475766af9e3ed9ec79af7b6c7f0c6fd414c"
+    }
+  ],
+  "observed_rows": 20,
+  "observed_treatments": [
+    "t1(Kanva)",
+    "t2(Victoria-1)",
+    "t3(LN-40)",
+    "t4(S-36)",
+    "t5(S-54)"
+  ],
+  "replications": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ],
+  "columns": [
+    "Replication",
+    "Treatment",
+    "Larva Weight",
+    "Cocoon Weight",
+    "Pupa Weight",
+    "Shell Weight",
+    "Shell Ratio",
+    "Filament Length",
+    "Filament Weight",
+    "Denier"
+  ],
+  "shell_ratio_recomputed_absolute_difference": {
+    "max_percentage_points": 2.50639053254438,
+    "mean_percentage_points": 0.6399403549473306
+  },
+  "limitations": [
+    "CSV weight columns do not specify units or sample denominators. Do not map to single-cocoon grams without author clarification.",
+    "Source-reported shell ratio differs from ratio of tabulated shell/cocoon values; possible aggregation/sample differences are unverified.",
+    "Temperature workbook has five instar-level rows, not treatment-specific longitudinal observations.",
+    "No disease or future loss labels; no independent batches across time/farms.",
+    "Not suitable for training a calibrated environmental early-risk model."
+  ],
+  "decision": "Retain as a real research audit artifact; do not seed operational batch records or train an unsupported risk model."
+}

@@ -1,0 +1,22 @@
+{
+  "operators": {
+    "Conv": 52,
+    "HardSwish": 18,
+    "Relu": 14,
+    "GlobalAveragePool": 10,
+    "HardSigmoid": 9,
+    "Mul": 9,
+    "Add": 6,
+    "Flatten": 1,
+    "Gemm": 1,
+    "Constant": 1,
+    "Div": 1
+  },
+  "initializer_count": 106,
+  "graph_input": [
+    "image"
+  ],
+  "graph_output": [
+    "logits"
+  ]
+}

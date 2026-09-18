@@ -1,0 +1,15 @@
+# DOMAIN must resolve to this host; ports 80 and 443 must be reachable.
+{$DOMAIN} {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "no-referrer"
+		X-Frame-Options "DENY"
+		Permissions-Policy "camera=(self), microphone=(), geolocation=()"
+	}
+	request_body {
+		max_size 8MB
+	}
+	reverse_proxy 127.0.0.1:8787
+}

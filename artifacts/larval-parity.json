@@ -1,0 +1,19 @@
+{
+  "source_id": "2e104c99f8c5e2c49d450be8",
+  "split": "test",
+  "classes": [
+    "Flacherie",
+    "Grasserie",
+    "Healthy",
+    "Overlap",
+    "Pebrine"
+  ],
+  "probabilities": [
+    9.982864139601588e-05,
+    0.9992009997367859,
+    0.0006501819007098675,
+    1.278410650229489e-06,
+    4.7718032874399796e-05
+  ],
+  "label": "Grasserie"
+}

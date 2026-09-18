@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-09-16T13:16:04.344Z",
+  "url": "http://127.0.0.1:8787/?deep=1",
+  "fixture": "larval-heldout-parity.png",
+  "result": {
+    "qualityWarnings": [],
+    "task": "silkworm-appearance-only",
+    "version": "larval-appearance-v1",
+    "decision": "review",
+    "label": "Grasserie",
+    "scores": [
+      {
+        "label": "Flacherie",
+        "score": 0.00009983120253309608
+      },
+      {
+        "label": "Grasserie",
+        "score": 0.9992008805274963
+      },
+      {
+        "label": "Healthy",
+        "score": 0.0006501892348751426
+      },
+      {
+        "label": "Overlap",
+        "score": 0.0000012784128102794057
+      },
+      {
+        "label": "Pebrine",
+        "score": 0.00004771906969835982
+      }
+    ],
+    "inferenceMs": 2.2189329997672758,
+    "explanationMs": 43.095267999888165,
+    "influence": [
+      0.000043451786041259766,
+      -0.00041031837463378906,
+      -0.00020807981491088867,
+      -0.00003343820571899414,
+      -0.00005626678466796875,
+      0.0012658238410949707,
+      -0.0004970431327819824,
+      -0.00039446353912353516,
+      -0.00030046701431274414,
+      0.0008491873741149902,
+      0.0000578761100769043,
+      -0.00020879507064819336,
+      0.0002071857452392578,
+      -0.00010126829147338867,
+      0.00037801265716552734,
+      0.00004273653030395508
+    ],
+    "frameAgreement": 1,
+    "sampledFrames": 1,
+    "execution": "backend",
+    "architecture": "MobileNetV3-Small + trained classification head",
+    "modelSha256": "1643d76dacee64b276507921b70a8f395ec64929a705662e630702367c91d855",
+    "runtime": "ONNX Runtime CPU",
+    "scope": "Dataset appearance classes; not confirmed diagnosis or validated field confidence"
+  }
+}

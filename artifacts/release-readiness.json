@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-09-16T03:28:47.422Z",
+  "checks": {
+    "modelChecksumMatches": true,
+    "teluguKeysComplete": true,
+    "teluguFontBundled": true,
+    "httpsConfig": true,
+    "accountServer": true,
+    "externalEvaluator": true
+  },
+  "externalEvidence": {
+    "departmentalDataset": "Official link unavailable at last access check; no verified download",
+    "independentFarmAccuracy": "Not established: independent labelled data not supplied",
+    "earlyWarningLeadTime": "Not established: independently timed onset cohort not supplied",
+    "yieldImprovement": "Not established: outcome impact study not supplied",
+    "reviewedTeluguCare": "Software translation implemented; independent language/SOP review not obtained",
+    "publicDeployment": "Configuration prepared; domain and host access required"
+  },
+  "excludedByUser": [
+    "Physical phone testing",
+    "Real shed testing"
+  ]
+}

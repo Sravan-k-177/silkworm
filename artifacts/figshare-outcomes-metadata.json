@@ -1,0 +1,113 @@
+{
+  "files": [
+    {
+      "id": 55056296,
+      "name": "analysis.csv",
+      "size": 1368,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55056296",
+      "supplied_md5": "c8198c93f89bf76136b1a05c25f36929",
+      "computed_md5": "c8198c93f89bf76136b1a05c25f36929",
+      "mimetype": "text/csv"
+    },
+    {
+      "id": 55056314,
+      "name": "LEAF CONSUMPTION.xlsx",
+      "size": 9851,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55056314",
+      "supplied_md5": "449ea120b7c97b62215a124732d9b1f1",
+      "computed_md5": "449ea120b7c97b62215a124732d9b1f1",
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "id": 55056344,
+      "name": "TEMPERATUIRE AND RELATIVE HUMIDITY.xlsx",
+      "size": 9887,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/55056344",
+      "supplied_md5": "7ccdd53dff470feabbc5bd35e1a2adf9",
+      "computed_md5": "7ccdd53dff470feabbc5bd35e1a2adf9",
+      "mimetype": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 21421061,
+      "full_name": "Soniya Thapa",
+      "first_name": "Soniya",
+      "last_name": "Thapa",
+      "is_active": true,
+      "url_name": "Soniya_Thapa",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [],
+  "figshare_url": "https://figshare.com/articles/dataset/Raw_data_of_evaluation_of_biological_and_commercial_parameters_of_silkworms/29214152",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">An experiment was conducted to evaluate and compare the varietal difference of mulberry on the growth and development of bivoltine silkworm J1 for biological and commercial character expression in Sericulture Development Centre in Khopasi, Kavrepalanchowk in Completely Randomized Design with 5 treatments and 4 replications. Larvae of silkworm (J1) were fed on mulberry varieties Kanva, Victoria-1, S-36, S-54, and LN-40. Observations on the dimension of different instars of silkworm Bombyx mori and yield parameter were observed.</p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 21106,
+  "created_date": "2025-06-02T17:40:06Z",
+  "modified_date": "2025-06-02T17:40:06Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 1,
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "tags": [
+    "Silkworm, Mulberry Variety, Cocoon"
+  ],
+  "keywords": [
+    "Silkworm, Mulberry Variety, Cocoon"
+  ],
+  "categories": [
+    {
+      "id": 24127,
+      "title": "Other agricultural, veterinary and food sciences not elsewhere classified",
+      "parent_id": 24124,
+      "path": "/23812/24124/24127",
+      "source_id": "309999",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Thapa, Soniya (2025). Raw data of evaluation of biological and commercial parameters of silkworms. figshare. Dataset. https://doi.org/10.6084/m9.figshare.29214152.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 29214152,
+  "title": "Raw data of evaluation of biological and commercial parameters of silkworms",
+  "doi": "10.6084/m9.figshare.29214152.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/29214152",
+  "published_date": "2025-06-02T17:40:06Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": null,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/29214152",
+  "url_public_api": "https://api.figshare.com/v2/articles/29214152",
+  "url_private_html": "https://figshare.com/account/articles/29214152",
+  "url_public_html": "https://figshare.com/articles/dataset/Raw_data_of_evaluation_of_biological_and_commercial_parameters_of_silkworms/29214152",
+  "timeline": {
+    "posted": "2025-06-02T17:40:06",
+    "firstOnline": "2025-06-02"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

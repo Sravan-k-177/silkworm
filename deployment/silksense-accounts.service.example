@@ -1,0 +1,22 @@
+[Unit]
+Description=SilkSense authenticated field application
+After=network.target
+
+[Service]
+Type=simple
+User=silksense
+Group=silksense
+WorkingDirectory=/opt/silksense
+EnvironmentFile=/etc/silksense/accounts.env
+ExecStart=/usr/bin/node --experimental-strip-types server/index.ts
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/silksense
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+import {DatabaseSync} from 'node:sqlite';
+import {mkdtempSync,writeFileSync} from 'node:fs';
+import {join,resolve} from 'node:path';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+const dir=mkdtempSync('.data/backup-test-'),source=new DatabaseSync(join(dir,'silksense.sqlite'));
+source.exec('PRAGMA journal_mode=WAL; CREATE TABLE events(id TEXT PRIMARY KEY, body TEXT)');source.prepare('INSERT INTO events VALUES(?,?)').run('synthetic-fixture','backup regression fixture only');
+const target=resolve(dir,'snapshot.sqlite');execFileSync(process.execPath,['--experimental-strip-types','scripts/backup-db.ts',target],{env:{...process.env,DATA_DIR:dir},stdio:'pipe'});
+source.prepare('INSERT INTO events VALUES(?,?)').run('after-snapshot','must not appear in snapshot');
+const restored=new DatabaseSync(target,{readOnly:true});assert.equal(restored.prepare('PRAGMA integrity_check').get().integrity_check,'ok');assert.equal(restored.prepare('SELECT COUNT(*) AS n FROM events').get().n,1);assert.equal(restored.prepare('SELECT body FROM events').get().body,'backup regression fixture only');restored.close();source.close();
+writeFileSync('artifacts/backup-verification.json',JSON.stringify({checkedAt:new Date().toISOString(),status:'passed',fixture:'synthetic regression database',onlineWALSnapshot:true,restoredIntegrity:'ok',restoredRows:1,laterWritesExcluded:true},null,2)+'\n');console.log('Online WAL snapshot and restored-copy integrity passed.');

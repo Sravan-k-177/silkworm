@@ -1,0 +1,85 @@
+Skip to main content
+Sign In / Register
+Silkworm_Diseases_Dataset
+Published: 7 September 2026
+|
+Version 1
+|
+DOI:
+10.17632/g4b89vpp9c.1
+Contributors:
+Kajal Mungase
+,
+Shwetambari Chiwhane
+Description
+
+Total Images: 5,529
+Disease/Health Classes: Healthy, Pebrine, Grasserie,Flacherie
+Target: Overlapping silkworms,Healthy, Pebrine, Grasserie, Flacherie
+Applications: Disease classification, object detection, instance segmentation, silkworm counting, and health monitoring.
+
+This dataset contains images of silkworms categorized into five classes: Flacherie, Grasserie, Healthy Silkworm, Overlap, and Pebrine. The images are organized into training, testing, and split subsets to support machine-learning-based silkworm disease classification. The dataset is intended for research and development of computer vision and deep learning models for automated silkworm disease identification.
+
+Download All 231 MB
+Files
+ZIP
+Mendeley_silkworm dataset splitting-20260903T035316Z-1-001.zip
+236 MB
+Steps to reproduce
+
+Steps to Download and Use the Dataset
+
+1. Download the ZIP file 'Silkworm_Disease_Classification_Dataset_Mendeley' from the Mendeley Data repository.
+2. Extract the ZIP file to access the dataset folders.
+3. The dataset contains five classes: Flacherie, Grasserie, Healthy_Silkworm, Overlap, and Pebrine
+4. Each class folder contains three subsets: train, test, and split
+5. The train folder is used for model training, while the test folder is used for independent evaluation.
+6. The folder name represents the corresponding class label and can be used directly for image classification.
+7. The extracted images can be loaded using standard Python image-processing/deep-learning libraries for further analysis.
+
+
+Institutions
+Symbiosis International University
+Maharashtra, Pune
+Categories
+Agricultural Science, Artificial Intelligence, Image Processing
+Licence
+CC BY 4.0
+Learn more
+Latest version
+Version 1
+Published:
+7 Sep 2026
+DOI:
+10.17632/g4b89vpp9c.1
+
+Cite this dataset
+
+Copy to clipboard
+Home
+|
+About
+|
+Accessibility Statement
+|
+Archive Policy
+|
+File Formats
+|
+API Docs
+|
+OAI
+|
+Mission
+|
+Status Updates
+Terms of Use
+|
+Privacy Policy
+|
+Cookie settings
+All content on this site: Copyright © 2026 Elsevier inc, its licensors, and contributors. All rights are reserved, including those for text and data mining, AI training and similar technologies. For all open access content, the Creative Commons licensing terms apply.
+We use cookies that are necessary to make our site work. We may also use additional cookies to analyze, improve, and personalize our content and your digital experience. You can manage your cookie preferences using theCookie settings link. For more information, see ourCookie Policy
+Cookie settings
+Accept only necessary cookies
+Accept all cookies

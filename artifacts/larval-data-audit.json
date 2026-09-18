@@ -1,0 +1,60 @@
+{
+  "source": "https://data.mendeley.com/datasets/g4b89vpp9c/1",
+  "archive_sha256": "508630aec63bedb141bcc3e985e28acfd250ad890a023136f6a7b3a0fa84cb01",
+  "decoded_images": 5529,
+  "source_class_counts": {
+    "Grasserie": 1127,
+    "Flacherie": 1016,
+    "Pebrine": 1022,
+    "Healthy": 1099,
+    "Overlap": 1265
+  },
+  "independent_heuristic_groups": 3843,
+  "representative_class_counts": {
+    "Grasserie": 667,
+    "Flacherie": 922,
+    "Pebrine": 830,
+    "Healthy": 366,
+    "Overlap": 1058
+  },
+  "conflicting_groups": 8,
+  "quarantined_images": 30,
+  "decode_failures": [],
+  "partitions": {
+    "train": {
+      "Grasserie": 401,
+      "Flacherie": 552,
+      "Pebrine": 498,
+      "Healthy": 220,
+      "Overlap": 634
+    },
+    "selection": {
+      "Grasserie": 66,
+      "Flacherie": 92,
+      "Pebrine": 83,
+      "Healthy": 37,
+      "Overlap": 106
+    },
+    "calibration": {
+      "Grasserie": 67,
+      "Flacherie": 93,
+      "Pebrine": 83,
+      "Healthy": 36,
+      "Overlap": 106
+    },
+    "test": {
+      "Grasserie": 133,
+      "Flacherie": 185,
+      "Pebrine": 166,
+      "Healthy": 73,
+      "Overlap": 212
+    }
+  },
+  "grouping": "Union source filename before .rf., exact original bytes, exact decoded pixels, dHash distance <=4, or pHash distance <=6; one representative per group.",
+  "limitations": [
+    "Perceptual grouping is a heuristic; no farm, specimen or session IDs are supplied.",
+    "Source disease folder labels are not independently verified laboratory diagnoses.",
+    "Overlap is a scene condition, not a disease; model must withhold health interpretation.",
+    "No linked environmental readings, onset times, or outcomes; future mortality prediction cannot be trained from this corpus."
+  ]
+}
